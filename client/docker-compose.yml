@@ -2,7 +2,7 @@ version: "3"
 services:
     status-client:
         image: darknightlab/status-client:main
-        build: ./
+        # build: ./
         container_name: status-client
         restart: always
         command: --dsn wss://username:password@status.mydomain.com
