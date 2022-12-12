@@ -5,4 +5,8 @@ services:
         # build: ./
         container_name: status-client
         restart: always
-        command: --dsn wss://username:password@status.mydomain.com
+        network_mode: bridge
+        command: 
+            - --dsn
+            - wss://username:password@status.mydomain.com
+
