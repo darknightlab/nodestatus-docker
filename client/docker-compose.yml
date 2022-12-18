@@ -5,7 +5,7 @@ services:
         # build: ./
         container_name: status-client
         restart: always
-        network_mode: bridge
+        network_mode: host
         command: 
             -h status.mydomain.com
             -u username
